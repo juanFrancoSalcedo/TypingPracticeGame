@@ -3,6 +3,8 @@ using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem;
+
 
 public partial class KeyboardDetector : MonoBehaviour
 {
@@ -23,7 +25,8 @@ public partial class KeyboardDetector : MonoBehaviour
     public static event System.Action<KeyCode> OnCurrentKeyUpdate;
     public static readonly float animationTimes = 0.6f;
     private bool stop = false;
-    
+
+
     void Update()
     {
         if (stop || !Input.anyKeyDown)

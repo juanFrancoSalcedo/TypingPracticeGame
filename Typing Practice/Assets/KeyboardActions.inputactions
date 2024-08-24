@@ -1,1 +1,34 @@
-{}
+{
+    "name": "KeyboardActions",
+    "maps": [
+        {
+            "name": "Keys",
+            "id": "26c0051b-d8c6-470b-b9df-f0c8a78fefc9",
+            "actions": [
+                {
+                    "name": "Actions",
+                    "type": "Button",
+                    "id": "54313be9-e31b-4b39-90c5-53cba79cd54f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "70095da7-c0b6-4dd2-b1f2-c653e7336e4a",
+                    "path": "<Keyboard>/anyKey",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Actions",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

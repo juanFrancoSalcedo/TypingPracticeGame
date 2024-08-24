@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44402242, g: 0.49316543, b: 0.5722324, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3176,6 +3176,7 @@ MonoBehaviour:
   m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
 --- !u!1 &440421424
 GameObject:
   m_ObjectHideFlags: 0
@@ -10419,7 +10420,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1298921987}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c38666cb4d43a304588cf0b7e5f86db6, type: 3}
   m_Name: 
@@ -10437,7 +10438,7 @@ MonoBehaviour:
       inWeight: 0.07653902
       outWeight: 0
     - serializedVersion: 3
-      time: 462.48413
+      time: 507.78845
       value: -7.9820633
       inSlope: 1.6480465
       outSlope: 1.6480465
@@ -10448,7 +10449,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _curveMultiplier: -20
+  _curveMultiplier: 1
 --- !u!1 &1387535911
 GameObject:
   m_ObjectHideFlags: 0

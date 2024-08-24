@@ -15,9 +15,9 @@ public partial class KeyboardDetector
 
         public void DisplayKey(KeyboardDetector detector) 
         {
-            m_curve.CurveMultiplier = -20;
-            DOTween.To(() => m_curve.CurveMultiplier, x => m_curve.CurveMultiplier = x, 0, KeyboardDetector.animationTimes).
-                SetEase(Ease.OutBack);
+            //m_curve.CurveMultiplier = -20;
+            //DOTween.To(() => m_curve.CurveMultiplier, x => m_curve.CurveMultiplier = x, 0, KeyboardDetector.animationTimes).
+            //    SetEase(Ease.OutBack);
             m_text.text = NormalizeKey(detector.CurrentKey.ToString()).ToString();
         }
 
