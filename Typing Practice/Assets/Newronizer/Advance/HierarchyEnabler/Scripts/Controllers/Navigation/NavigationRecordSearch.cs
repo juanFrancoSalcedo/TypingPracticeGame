@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Newronizer.HierarchyStates
+namespace B_Extensions.HierarchyStates
 {
     //is monobehaviour in case a button wants use it
     public class NavigationRecordSearch : MonoBehaviour

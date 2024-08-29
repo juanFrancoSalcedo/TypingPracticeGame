@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEngine;
 
 #if UNITY_EDITOR
-namespace Newronizer
+namespace B_Extensions
 {
     [CustomPropertyDrawer(typeof(ListToEnumEditor))]
     public class ListEnumDrawer : PropertyDrawer

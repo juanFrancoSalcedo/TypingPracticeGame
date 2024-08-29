@@ -6,7 +6,7 @@ using UnityEditor;
 using System;
 using UnityEditor.SceneManagement;
 
-namespace Newronizer.HierarchyStates
+namespace B_Extensions.HierarchyStates
 {
     #region UNITY_EDITOR
     [InitializeOnLoad]
@@ -14,7 +14,6 @@ namespace Newronizer.HierarchyStates
     {
         static StateSetterExistChecker()
         {
-
             EditorApplication.update += Update;
         }
 
@@ -27,6 +26,8 @@ namespace Newronizer.HierarchyStates
         private static void CheckExistDuplicated() 
         {
             var array = CustomHierarchy.stateObjects;
+            if (array == null)
+                return;
             foreach (var item in array)
             {
                 var count = array.Where(i => i.reference.UniqueId.Equals(item.reference.UniqueId));

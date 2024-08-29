@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace Newronizer.HierarchyStates
+namespace B_Extensions.HierarchyStates
 {
     public class HierarchyEditor : EditorWindow
     {

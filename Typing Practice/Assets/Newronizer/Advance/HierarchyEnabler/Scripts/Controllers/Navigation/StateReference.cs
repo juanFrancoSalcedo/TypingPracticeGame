@@ -5,7 +5,7 @@ using UnityEditor.SceneManagement;
 #endif
 using UnityEngine;
 
-namespace Newronizer.HierarchyStates
+namespace B_Extensions.HierarchyStates
 {
     [System.Serializable]
     public class StateReference : IActivatable

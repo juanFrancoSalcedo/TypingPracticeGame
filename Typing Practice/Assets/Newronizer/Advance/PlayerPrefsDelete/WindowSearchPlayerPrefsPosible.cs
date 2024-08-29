@@ -4,13 +4,13 @@ using UnityEngine;
 
 
 
-namespace Newronizer
+namespace B_Extensions
 {
 #if UNITY_EDITOR
 
     public class WindowSearchPlayerPrefsPosible : EditorWindow
     {
-        [MenuItem("Newronizer/PlayerPrefs Elimination")]
+        [MenuItem("B_Extensions/PlayerPrefs Elimination")]
         public static void ShowWindow()
         {
             //PlayerPrefs.SetString(KeyStorage.PlayersTest, "Hola Mundo");
@@ -50,6 +50,14 @@ namespace Newronizer
                     {
                         PlayerPrefs.DeleteKey(item);
                         SearchPlayerPrefs();
+                    }
+
+                    if (GUILayout.Button("Show"))
+                    {
+                        Debug.Log("Float:"+PlayerPrefs.GetFloat(item));
+                        Debug.Log("Int:" + PlayerPrefs.GetInt(item));
+                        Debug.Log("String:" + PlayerPrefs.GetString(item));
+
                     }
                     GUILayout.EndHorizontal();
                 }

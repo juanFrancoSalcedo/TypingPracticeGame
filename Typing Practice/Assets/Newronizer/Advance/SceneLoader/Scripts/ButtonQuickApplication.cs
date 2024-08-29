@@ -1,5 +1,5 @@
-﻿using Newronizer;
-using Newronizer.SceneLoader;
+﻿using B_Extensions;
+using B_Extensions.SceneLoader;
 
 public class ButtonQuickApplication: BaseButtonAttendant
 {

@@ -6,7 +6,7 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 #endif
 
-namespace Newronizer.HierarchyStates
+namespace B_Extensions.HierarchyStates
 {
     [DisallowMultipleComponent]
     public class StateSetter : MonoBehaviour
@@ -60,6 +60,18 @@ namespace Newronizer.HierarchyStates
         {
             yield return new WaitForSeconds(timeDelay);
             gameObject.SetActive(false);
+        }
+    }
+
+    public class StateHierachyEnabler 
+    {
+
+        public static void SearchAndEnableInParent(Transform parent) 
+        {
+            for (int i = 0; i < parent.childCount; i++)
+            {
+
+            }
         }
     }
 }

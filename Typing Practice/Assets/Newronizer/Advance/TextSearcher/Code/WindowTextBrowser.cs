@@ -9,7 +9,7 @@ using TMPro;
 #if UNITY_EDITOR
 public class WindowTextBrowser : EditorWindow
 {
-    [MenuItem("Newronizer/Text extensions/Find Text")]
+    [MenuItem("B_Extensions/Text extensions/Find Text")]
     public static void ShowWindow()
     {
         EditorWindow window = GetWindow(typeof(WindowTextBrowser));
@@ -100,7 +100,7 @@ public class WindowTextBrowser : EditorWindow
 
 public class TextToAllCaps 
 {
-    [MenuItem("Newronizer/Text extensions/ToUpper")]
+    [MenuItem("B_Extensions/Text extensions/ToUpper")]
     public static void TextToUpper()
     {
         if (Selection.activeGameObject == null)
@@ -123,7 +123,7 @@ public class TextToAllCaps
             textMesh.text = textMesh.text.ToUpper();
     }
 
-    [MenuItem("Newronizer/Text extensions/ToLower")]
+    [MenuItem("B_Extensions/Text extensions/ToLower")]
     public static void TextToLower()
     {
         if (Selection.activeGameObject == null)

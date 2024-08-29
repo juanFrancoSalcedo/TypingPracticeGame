@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Newronizer.HierarchyStates;
+using B_Extensions.HierarchyStates;
 
 public class CallerNavigationRecordScan : MonoBehaviour
 {

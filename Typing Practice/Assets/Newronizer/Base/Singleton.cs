@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Newronizer
+namespace B_Extensions
 {
     public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Newronizer
+namespace B_Extensions
 {
     public class BaseButtonAttendant : MonoBehaviour
     {

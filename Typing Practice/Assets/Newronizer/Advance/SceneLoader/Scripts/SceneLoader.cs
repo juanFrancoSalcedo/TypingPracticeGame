@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
-namespace Newronizer.SceneLoader
+namespace B_Extensions.SceneLoader
 {
     public class SceneLoader : Singleton<SceneLoader>
     {

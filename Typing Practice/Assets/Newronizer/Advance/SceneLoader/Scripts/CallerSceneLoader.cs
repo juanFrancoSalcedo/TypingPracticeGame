@@ -1,10 +1,10 @@
-﻿using Newronizer;
+﻿using B_Extensions;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Newronizer.SceneLoader
+namespace B_Extensions.SceneLoader
 {
     public class CallerSceneLoader : MonoBehaviour
     {

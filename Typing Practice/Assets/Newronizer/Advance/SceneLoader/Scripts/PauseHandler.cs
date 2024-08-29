@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Newronizer.SceneLoader
+namespace B_Extensions.SceneLoader
 {
     public class PauseHandler
     {

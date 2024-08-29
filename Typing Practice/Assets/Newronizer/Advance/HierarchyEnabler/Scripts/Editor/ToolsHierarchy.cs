@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-namespace Newronizer.HierarchyStates 
+namespace B_Extensions.HierarchyStates 
 {
     public class ToolsHierarchy
     {
         public static event System.Action OnRestored = null;
 
-        [MenuItem("Newronizer/Navigation Hierarchy/Restore Object In Hierarchy %#e")]
+        [MenuItem("B_Extensions/Navigation Hierarchy/Restore Object In Hierarchy %#e")]
         private static void CallSearch()
         {
             CustomHierarchy.SearchEnablers();

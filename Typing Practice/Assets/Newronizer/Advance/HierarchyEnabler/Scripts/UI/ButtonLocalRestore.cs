@@ -2,14 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Newronizer.HierarchyStates
+namespace B_Extensions.HierarchyStates
 {
+    [RequireComponent(typeof(ParentLocalRestoreHierarchy))]
     public class ButtonLocalRestore : BaseButtonAttendant
     {
-        [SerializeField] private Transform transformToRestore;
-        [SerializeField] private bool justDisableChildren = true;
         void Start() => buttonComponent.onClick.AddListener(LocalRestore);
-
-        public void LocalRestore() => NavigationRecordController.Instance.Activator.RestoreObjectsByParent(transformToRestore, justDisableChildren);
+        public void LocalRestore() => GetComponent<ParentLocalRestoreHierarchy>().LocalRestore();
     }
 }
