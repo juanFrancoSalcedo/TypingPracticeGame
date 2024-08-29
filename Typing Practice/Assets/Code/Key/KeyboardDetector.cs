@@ -81,6 +81,7 @@ public partial class KeyboardDetector : MonoBehaviour
 
     private static char NormalizeKey(string str)
     {
+        print(str);
         if (str.Equals("Space"))
             return '_';
         if (str.Equals("Comma"))
@@ -91,8 +92,26 @@ public partial class KeyboardDetector : MonoBehaviour
             return '-';
         if (str.Equals("Semicolon"))
             return 'Ñ';
-        if (str.Equals("BackQuote"))
-            return 'Ñ';
+        if (str.Equals("Alpha1"))
+            return '1';
+        if (str.Equals("Alpha2"))
+            return '2';
+        if (str.Equals("Alpha3"))
+            return '3';
+        if (str.Equals("Alpha4"))
+            return '4';
+        if (str.Equals("Alpha5"))
+            return '5';
+        if (str.Equals("Alpha6"))
+            return '6';
+        if (str.Equals("Alpha7"))
+            return '7';
+        if (str.Equals("Alpha8"))
+            return '8';
+        if (str.Equals("Alpha9"))
+            return '9';
+        if (str.Equals("Alpha0"))
+            return '0';
         return str[0];
     }
 }

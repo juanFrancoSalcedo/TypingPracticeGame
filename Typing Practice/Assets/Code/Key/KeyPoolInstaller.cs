@@ -5,8 +5,18 @@ public class KeyPoolInstaller: MonoBehaviour
 {
     [SerializeField] private KeyboardDetector detector = null;
     [SerializeField] private List<KeyPoolInfo> pools = null;
+    [SerializeField] private KeyPoolInfo infoFreePractice = null;
     private static bool repeatPool = false;
-    private void Awake() => InstallPool();
+    private void Awake()
+    {
+        if (infoFreePractice != null)
+        {
+            KeyboardDetector.Pool = infoFreePractice.pool;
+            detector.UpdateCurrentKey();
+        }
+        else
+            InstallPool();
+    }
 
     public void RepeatSession() => repeatPool = true;
 

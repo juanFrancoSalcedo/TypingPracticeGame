@@ -43,44 +43,54 @@ public static class KeyCodeExtensions
     {
         if (code == KeyCode.Q ||
             code == KeyCode.A ||
-            code == KeyCode.Z) 
+            code == KeyCode.Z ||
+            code == KeyCode.Alpha1) 
             return Finger.LittleL;
         if (code == KeyCode.W ||
             code == KeyCode.S ||
-            code == KeyCode.X)
+            code == KeyCode.X ||
+            code == KeyCode.Alpha2)
             return Finger.RingL;
         if (code == KeyCode.E ||
             code == KeyCode.D ||
-            code == KeyCode.C)
+            code == KeyCode.C ||
+            code == KeyCode.Alpha3)
             return Finger.MiddleL;
         if (code == KeyCode.R ||
             code == KeyCode.F ||
             code == KeyCode.V ||
             code == KeyCode.T ||
             code == KeyCode.G ||
-            code == KeyCode.B)
+            code == KeyCode.B ||
+            code == KeyCode.Alpha4 ||
+            code == KeyCode.Alpha5)
             return Finger.IndexL;
 
 
 
         if (code == KeyCode.P ||
             code == KeyCode.Semicolon ||
-            code == KeyCode.Minus)
+            code == KeyCode.Minus ||
+            code == KeyCode.Alpha0)
             return Finger.LittleR;
         if (code == KeyCode.O ||
             code == KeyCode.L ||
-            code == KeyCode.Period)
+            code == KeyCode.Period ||
+            code == KeyCode.Alpha9)
             return Finger.RingR;
         if (code == KeyCode.I ||
             code == KeyCode.K ||
-            code == KeyCode.Comma)
+            code == KeyCode.Comma ||
+            code == KeyCode.Alpha8)
             return Finger.MiddleR;
         if (code == KeyCode.Y ||
             code == KeyCode.H ||
             code == KeyCode.N ||
             code == KeyCode.U ||
             code == KeyCode.J ||
-            code == KeyCode.M)
+            code == KeyCode.M ||
+            code == KeyCode.Alpha6 ||
+            code == KeyCode.Alpha7)
             return Finger.IndexR;
 
         if (code == KeyCode.Space)
