@@ -100,12 +100,27 @@ public class NetworkRunnerController : Singleton<NetworkRunnerController>, INetw
 
     public void OnInput(NetworkRunner runner, NetworkInput input)
     {
+        if (Input.anyKeyDown) 
+        {
+            var inputData = new PlayerInputData();
+            if (Input.inputString.Length > 0)
+            {
+                inputData.charShoot = Input.inputString[0]; // Captura el primer carácter de la cadena de entrada
+            }
+            else
+            {
+                inputData.charShoot = '\0'; // Caracter nulo si no hay teclas presionadas
+            }
 
+            // Asignar los datos de entrada al input actual
+            input.Set(inputData);
+        
+        }
     }
 
     public void OnInputMissing(NetworkRunner runner, PlayerRef player, NetworkInput input)
     {
-        Debug.Log("s");
+        Debug.Log("s "+player.AsIndex);
     }
 
     public void OnObjectEnterAOI(NetworkRunner runner, NetworkObject obj, PlayerRef player)

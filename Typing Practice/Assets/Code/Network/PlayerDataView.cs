@@ -11,7 +11,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using Zenject;
 
-public class PlayerDataView : NetworkBehaviour,IPlayerLeft
+public class PlayerDataView : NetworkBehaviour
 {
     public static PlayerDataView LocalPlayer { get; private set; } = null;
     [UnitySerializeField] [Networked, OnChangedRender(nameof(SetRole))] public int CharacterIndex { get; set;}
@@ -36,29 +36,6 @@ public class PlayerDataView : NetworkBehaviour,IPlayerLeft
         { 
             LocalPlayer = this;
             print("ATRASADO");
-        }
-    }
-
-    public void PlayerLeft(PlayerRef player)
-    {
-        //PASS AUTHORITY
-        if (!Runner.IsSharedModeMasterClient)
-            return;
-        var playerDatas = FindObjectsByType<PlayerDataView>(FindObjectsSortMode.None);
-        foreach (var item in playerDatas)
-        {
-            if (item.Object.StateAuthority.Equals(player)) 
-                item.Object.RequestStateAuthority();
-        }
-    }
-
-    public static void SetLocalByReconnection() 
-    {
-        var playerDatas = FindObjectsByType<PlayerDataView>(FindObjectsSortMode.None);
-
-        foreach (var item in playerDatas)
-        {
-
         }
     }
 
